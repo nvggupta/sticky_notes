@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.create {
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    /* position: fixed; */
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 80%;
+    position: relative;
+}
+
+#Write {
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0px red;
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    padding: 15px;
+    position: relative;
+}
+
+#colorBox {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#addBtn {
+    border-radius: 20px;
+    height: 50px;
+    width: 150px;
+    background: linear-gradient(180deg, orange, yellow);
+    border: none;
+    cursor: pointer;
+    transition: background 1s linear;
+    font-size: 16px;
+    margin-top: 20px;
+    position: relative;
+    left: -160px;
+}
+
+#addBtn:hover {
+    background: linear-gradient(180deg, yellow, orange);
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   
+}
+
+.add h1 {
+    margin-bottom: 20px;
+}
+
+#notes-grid {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+    height: 500px;
+}
+
+.note {
+    background-color: yellow;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.note .delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
